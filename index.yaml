@@ -1,0 +1,45 @@
+ProjectTitle: Title
+
+PageList:
+  - file: homepage.html
+    ready: 100
+  - file: login.html
+    ready: 1
+  - file: change-pass.html
+    ready: 1
+  - file: reg.html
+    ready: 1
+  - file: pass.html
+    ready: 1
+  - file: invest.html
+    ready: 1
+  - file: invest-account.html
+    ready: 1
+  - file: p2p.html
+    ready: 1
+  - file: p2p-order.html
+    ready: 1
+  - file: settings.html
+    ready: 1
+  - file: wallet.html
+    ready: 1
+  - file: referal.html
+    ready: 1
+  - file: notification.html
+    ready: 1
+  - file: full-stat.html
+    ready: 1
+  - file: ballance.html
+    ready: 1
+  - file: ballance-2.html
+    ready: 1
+  - file: change-login.html
+    ready: 1
+  - file: history.html
+    ready: 1
+  - file: history-2.html
+    ready: 1
+  - file: partners.html
+    ready: 1
+  - file: te-machine.html
+    ready: 1

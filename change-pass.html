@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- MADE WITH LOVE BY <> KHMELEVSKOY & ASSOCIATES </> www.khmelevskoy.co-->
+    <meta charset="utf-8">
+    <title>login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <!-- appstore links-->
+    <!-- seo meta-->
+    <meta name="description" content="Meta description">
+    <meta name="keywords" content="Key, words">
+    <meta name="author" content="Site name">
+    <!-- og meta-->
+    <meta property="og:title" content="Site name">
+    <meta property="og:url" content="https://projectname.surge.sh">
+    <meta property="og:image" content="https://projectname.surge.sh/img/og/1_1080х607.jpg">
+    <meta property="og:description" content="Site name">
+    <meta name="twitter:title" content="Site name">
+    <meta name="twitter:description" content="Site name">
+    <meta name="twitter:image:src" content="https://projectname.surge.sh/img/og/1_1200х628.jpg">
+    <meta name="twitter:url" content="https://projectname.surge.sh">
+    <!-- remove for production-->
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+
+  <body>
+    <div class="page login-page">
+      <div class="page__content">
+        <section class="login">
+          <div class="login-wrapper">
+            <a class="logo" href="#"></a>
+            <form class="login-form" action="#">
+              <div class="title-item-2 text-center mb-5">Введите новый пароль</div>
+              <div class="ui-group">
+                <div class="ui-group-input">
+                  <input class="ui-input pass-input" type="password" placeholder="Пароль" minlength="8" required>
+                  <svg class="ico ico-mono-lock placeholder-icon normal">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-lock"></use>
+                  </svg>
+                  <svg class="ico ico-mono-valid placeholder-icon validate">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-valid"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="ui-group">
+                <div class="ui-group-input">
+                  <input class="ui-input pass-confirm" type="password" placeholder="Подтвердить пароль" minlength="8"
+                   required>
+                  <svg class="ico ico-mono-lock placeholder-icon normal">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-lock"></use>
+                  </svg>
+                  <svg class="ico ico-mono-valid placeholder-icon validate">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-valid"></use>
+                  </svg>
+                </div>
+              </div>
+              <button class="btn btn-primary shiny" type="submit" disabled>Войти</button>
+              <a class="link-grad" href="#" style="display: block; width: fit-content; margin: 20px auto 0">Вернуться на
+                страницу входа </a>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="modal micromodal-slide" id="conf-auth-modal" aria-hidden="true">
+      <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal-container-2" role="dialog" aria-modal="true">
+          <div class="modal-close" aria-label="Close modal" data-micromodal-close>
+            <svg class="ico ico-mono-close">
+              <use xlink:href="img/sprite-mono.svg#ico-mono-close"></use>
+            </svg>
+          </div>
+          <div class="modal-header row column align-center mb-3">
+            <div class="logo"></div>
+            <div class="text-item c-white">Пожалуйста, введите свой код двухфакторной аутентификации</div>
+          </div>
+          <div class="modal-content">
+            <form class="modal-form" action="#">
+              <div class="ui-group mb-4">
+                <input class="ui-input" type="text" placeholder="234235">
+              </div>
+              <div class="modal-form-row mt-0">
+                <button class="btn btn-black">
+                  <span>Выйти</span>
+                </button>
+                <button class="btn btn-primary">
+                  <span>Войти</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>
