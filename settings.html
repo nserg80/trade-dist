@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <!-- MADE WITH LOVE BY <> KHMELEVSKOY & ASSOCIATES </> www.khmelevskoy.co-->
     <meta charset="utf-8">
@@ -24,19 +25,22 @@
     <meta name="twitter:url" content="https://projectname.surge.sh">
     <!-- remove for production-->
     <meta name="robots" content="noindex">
-    <link rel="stylesheet" media="all" href="css/app.css"><!--[if lt IE 9]>
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
+
   <body>
-    <header class="header header-account"> 
-      <div class="container"> 
+    <header class="header header-account">
+      <div class="container">
         <div class="row justify-end align-center gap-0">
           <div class="header-item">
-            <div class="assets"> 
-              <svg class="ico ico-color-coin">
-                <use xlink:href="img/sprite-color.svg#ico-color-coin"></use>
-              </svg><span>$25,785,658</span>
+            <div class="assets">
+              <svg class="ico ico-color-tether-usdt">
+                <use xlink:href="img/sprite-color.svg#ico-color-tether-usdt"></use>
+              </svg>
+              <span>$25,785,658</span>
             </div>
           </div>
           <div class="header-item">
@@ -46,23 +50,40 @@
                   <use xlink:href="img/sprite-mono.svg#ico-mono-bell"></use>
                 </svg>
                 <div class="notice">5</div>
-                <ul class="submenu"> 
-                  <li> <a href="#"> 
+                <ul class="submenu">
+                  <li>
+                    <a href="#">
                       <svg class="ico ico-mono-wallet">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-wallet"></use>
-                      </svg><span>Начислено&nbsp;50&nbsp;TE&nbsp;за закрытие цикла</span></a></li>
-                  <li> <a href="#"> 
+                      </svg>
+                      <span>Начислено&nbsp;50&nbsp;TE&nbsp;за закрытие цикла</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
                       <svg class="ico ico-mono-wallet">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-wallet"></use>
-                      </svg><span>Начислено&nbsp;12.75&nbsp;от&nbsp;Geo</span></a></li>
-                  <li> <a href="#"> 
+                      </svg>
+                      <span>Начислено&nbsp;12.75&nbsp;от&nbsp;Geo</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
                       <svg class="ico ico-mono-bell">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-bell"></use>
-                      </svg><span>Masko&nbsp;invest&nbsp;group</span></a></li>
-                  <li> <a href="#"> 
+                      </svg>
+                      <span>Masko&nbsp;invest&nbsp;group</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
                       <svg class="ico ico-mono-bell">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-bell"></use>
-                      </svg><span>Обновление&nbsp;Turbo&nbsp;5.0</span></a></li><a class="btn btn-primary" href="#">Смотреть все уведомления</a>
+                      </svg>
+                      <span>Обновление&nbsp;Turbo&nbsp;5.0</span>
+                    </a>
+                  </li>
+                  <a class="btn btn-primary" href="#">Смотреть все уведомления</a>
                 </ul>
               </button>
               <button class="btn-control menu">
@@ -70,29 +91,54 @@
                   <use xlink:href="img/sprite-mono.svg#ico-mono-gear"></use>
                 </svg>
                 <ul class="submenu">
-                  <li> <a href="#">
+                  <li>
+                    <a href="#">
                       <svg class="ico ico-mono-user">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-user"></use>
-                      </svg><span>Настройки&nbsp;профиля</span></a></li>
-                  <li> <a href="#">
+                      </svg>
+                      <span>Настройки&nbsp;профиля</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
                       <svg class="ico ico-mono-user2">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-user2"></use>
-                      </svg><span>Парнерская&nbsp;ссылка</span></a></li>
-                  <li><a href="#">
+                      </svg>
+                      <span>Парнерская&nbsp;ссылка</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
                       <svg class="ico ico-mono-exit">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-exit"></use>
-                      </svg><span>Выход</span></a></li>
+                      </svg>
+                      <span>Выход</span>
+                    </a>
+                  </li>
                 </ul>
               </button>
-              <button class="btn-control">
-                <svg class="ico ico-color-russia">
-                  <use xlink:href="img/sprite-color.svg#ico-color-russia"></use>
-                </svg>
-              </button>
+              <div class="lang-switcher">
+                <div class="lang-switcher__opener">
+                  <svg class="ico ico-color-flag-ru lang-switcher__current">
+                    <use xlink:href="img/sprite-color.svg#ico-color-flag-ru"></use>
+                  </svg>
+                  <svg class="ico ico-mono-lang-arrow-down lang-switcher__arrow">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-lang-arrow-down"></use>
+                  </svg>
+                </div>
+                <ul class="lang-switcher__list">
+                  <li class="lang-switcher__item">
+                    <svg class="ico ico-color-flag-en lang-switcher__lang">
+                      <use xlink:href="img/sprite-color.svg#ico-color-flag-en"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="header-item">
-            <div class="user"><img src="img/user.webp" alt="User">
+            <div class="user">
+              <img src="img/user.webp" alt="User">
               <div class="text-item-2">Vladlen</div>
             </div>
           </div>
@@ -100,84 +146,147 @@
       </div>
     </header>
     <div class="fixed-menu">
-      <div class="fixed-menu-wrapper"> 
-        <div class="fixed-menu-top"><a class="logo" href="#"></a>
-          <button class="fixed-menu-btn"><img src="img/grad-icon/hamburger.svg" alt=""></button>
+      <div class="fixed-menu-wrapper">
+        <div class="fixed-menu-top">
+          <a class="logo" href="#"></a>
+          <button class="fixed-menu-btn">
+            <img src="img/grad-icon/hamburger.svg" alt="">
+          </button>
         </div>
         <div class="fixed-menu-body">
-          <nav> <a class="fixed-menu-item" href="#">
+          <nav>
+            <a class="fixed-menu-item" href="#">
               <svg class="ico ico-mono-account-circle">
                 <use xlink:href="img/sprite-mono.svg#ico-mono-account-circle"></use>
-              </svg><span>Профиль</span></a><a class="fixed-menu-item" href="#">
+              </svg>
+              <span>Профиль</span>
+            </a>
+            <a class="fixed-menu-item" href="#">
               <svg class="ico ico-mono-dollar-circle">
                 <use xlink:href="img/sprite-mono.svg#ico-mono-dollar-circle"></use>
-              </svg><span>P2P каталог</span></a><a class="fixed-menu-item" href="#">
+              </svg>
+              <span>P2P каталог</span>
+            </a>
+            <a class="fixed-menu-item" href="#">
               <svg class="ico ico-mono-dollar">
                 <use xlink:href="img/sprite-mono.svg#ico-mono-dollar"></use>
-              </svg><span>Инвестиции</span></a><a class="fixed-menu-item" href="#">
+              </svg>
+              <span>Инвестиции</span>
+            </a>
+            <a class="fixed-menu-item" href="#">
               <svg class="ico ico-mono-wallet">
                 <use xlink:href="img/sprite-mono.svg#ico-mono-wallet"></use>
-              </svg><span>Кошелек</span></a></nav>
+              </svg>
+              <span>Кошелек</span>
+            </a>
+          </nav>
         </div>
-        <div class="fixed-menu-bottom"><a class="fixed-menu-partner" href="#"><img src="img/partner.webp" alt=""><span>Реферальная<br>программа</span></a>
+        <div class="fixed-menu-bottom">
+          <a class="fixed-menu-partner" href="#">
+            <img src="img/partner.webp" alt="">
+            <span>Реферальная
+              <br>программа
+            </span>
+          </a>
           <div class="fixed-menu-submenu">
             <button class="fixed-menu-item">
               <svg class="ico ico-mono-referal">
                 <use xlink:href="img/sprite-mono.svg#ico-mono-referal"></use>
-              </svg><span>Реферальная программа</span>
+              </svg>
+              <span>Реферальная программа</span>
             </button>
-            <nav class="fixed-menu-submenu-content"><a class="fixed-menu-item" href="#">
+            <nav class="fixed-menu-submenu-content">
+              <a class="fixed-menu-item" href="#">
                 <svg class="ico ico-mono-list">
                   <use xlink:href="img/sprite-mono.svg#ico-mono-list"></use>
-                </svg><span>Мои рефералы</span></a><a class="fixed-menu-item" href="#">
+                </svg>
+                <span>Мои рефералы</span>
+              </a>
+              <a class="fixed-menu-item" href="#">
                 <svg class="ico ico-mono-list">
                   <use xlink:href="img/sprite-mono.svg#ico-mono-list"></use>
-                </svg><span>бонусная программа</span></a></nav>
-          </div><a class="fixed-menu-item" href="#">
+                </svg>
+                <span>бонусная программа</span>
+              </a>
+            </nav>
+          </div>
+          <a class="fixed-menu-item" href="#">
             <svg class="ico ico-mono-support">
               <use xlink:href="img/sprite-mono.svg#ico-mono-support"></use>
-            </svg><span>Поддержка</span></a>
+            </svg>
+            <span>Поддержка</span>
+          </a>
         </div>
       </div>
     </div>
     <div class="page settings-page">
       <div class="page__content">
-        <section class="settings"> 
+        <section class="settings">
           <div class="container tabs">
             <h3 class="section-title mb-10">Общая информация</h3>
             <div class="settings-main-panel">
-              <div class="settings-controls tabs-nav"> 
-                <nav><a href="#tab-common-info">
+              <div class="settings-controls tabs-nav">
+                <nav>
+                  <a href="#tab-common-info">
                     <svg class="ico ico-mono-user">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-user"></use>
-                    </svg><span>Общая информация</span></a><a href="#tab-change-login">
+                    </svg>
+                    <span>Общая информация</span>
+                  </a>
+                  <a href="#tab-change-login">
                     <svg class="ico ico-mono-referal">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-referal"></use>
-                    </svg><span>Смена логина</span></a><a href="#tab-change-pass">
+                    </svg>
+                    <span>Смена логина</span>
+                  </a>
+                  <a href="#tab-change-pass">
                     <svg class="ico ico-mono-lock">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-lock"></use>
-                    </svg><span>Смена пароля</span></a><a href="#tab-change-wallet">
+                    </svg>
+                    <span>Смена пароля</span>
+                  </a>
+                  <a href="#tab-change-wallet">
                     <svg class="ico ico-mono-wallet">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-wallet"></use>
-                    </svg><span>Кошелек</span></a><a href="#tab-change-user-data">
+                    </svg>
+                    <span>Кошелек</span>
+                  </a>
+                  <a href="#tab-change-user-data">
                     <svg class="ico ico-mono-double-user">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-double-user"></use>
-                    </svg><span>Смена ФИО</span></a><a href="#tab-telegam">
+                    </svg>
+                    <span>Смена ФИО</span>
+                  </a>
+                  <a href="#tab-telegam">
                     <svg class="ico ico-mono-teleg">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-teleg"></use>
-                    </svg><span>Telegram</span></a><a href="#tab-change-phone">
+                    </svg>
+                    <span>Telegram</span>
+                  </a>
+                  <a href="#tab-change-phone">
                     <svg class="ico ico-mono-phone">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-phone"></use>
-                    </svg><span>Номер телефона</span></a><a href="#tab-confirm-email">
+                    </svg>
+                    <span>Номер телефона</span>
+                  </a>
+                  <a href="#tab-confirm-email">
                     <svg class="ico ico-mono-mail">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-mail"></use>
-                    </svg><span>Подтверждение email</span></a><a href="#tab-notifications">
+                    </svg>
+                    <span>Подтверждение email</span>
+                  </a>
+                  <a href="#tab-notifications">
                     <svg class="ico ico-mono-bell2">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-bell2"></use>
-                    </svg><span>Уведомления</span></a><a href="#tab-props">
+                    </svg>
+                    <span>Уведомления</span>
+                  </a>
+                  <a href="#tab-props">
                     <svg class="ico ico-mono-money">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-money"></use>
-                    </svg><span>Реквизиты</span></a>
+                    </svg>
+                    <span>Реквизиты</span>
+                  </a>
                 </nav>
                 <select class="custom-select">
                   <option value="#tab-common-info">Общая информация</option>
@@ -196,37 +305,37 @@
                 <div class="tabs-item" data-tab="#tab-common-info">
                   <div class="settings-common-row">
                     <div class="settings-common-column">
-                      <div class="settings-common-item"> 
+                      <div class="settings-common-item">
                         <div class="text-item">Логин</div>
                         <div class="text-item c-white">lolipop845</div>
                       </div>
-                      <div class="settings-common-item"> 
+                      <div class="settings-common-item">
                         <div class="text-item">Email</div>
                         <div class="text-item c-white">lolipop@gmail.com</div>
                       </div>
-                      <div class="settings-common-item"> 
+                      <div class="settings-common-item">
                         <div class="text-item">Имя</div>
                         <div class="text-item c-white">Vladlen</div>
                       </div>
-                      <div class="settings-common-item"> 
+                      <div class="settings-common-item">
                         <div class="text-item">Telegram</div>
                         <div class="text-item c-white">telegram</div>
                       </div>
-                      <div class="settings-common-item"> 
+                      <div class="settings-common-item">
                         <div class="text-item">USDT для вывода средств</div>
                         <div class="text-item c-white">trc20</div>
                       </div>
                     </div>
                     <div class="settings-common-column">
-                      <div class="settings-common-item"> 
+                      <div class="settings-common-item">
                         <div class="text-item">Фамилия</div>
                         <div class="text-item c-white">Marchenko</div>
                       </div>
-                      <div class="settings-common-item"> 
+                      <div class="settings-common-item">
                         <div class="text-item">Телефон</div>
                         <div class="text-item c-white">+38 (057) 000 00 00</div>
                       </div>
-                      <div class="settings-common-item"> 
+                      <div class="settings-common-item">
                         <div class="text-item">Отчество</div>
                         <div class="text-item c-white">Fedorovich</div>
                       </div>
@@ -235,7 +344,7 @@
                 </div>
                 <div class="tabs-item" data-tab="#tab-change-login">
                   <form class="settings-form" action="#">
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <label class="c-white">Логин</label>
                       <input class="ui-input" type="text">
                     </div>
@@ -246,109 +355,109 @@
                 </div>
                 <div class="tabs-item" data-tab="#tab-change-pass">
                   <form class="settings-form" action="#">
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <label class="c-white">Текущий пароль</label>
                       <input class="ui-input" type="text" placeholder="Введите текущий пароль">
                     </div>
                     <div class="settings-form-row">
-                      <div class="ui-group"> 
+                      <div class="ui-group">
                         <label class="c-white">Новый пароль</label>
                         <input class="ui-input" type="text" placeholder="Введите новый пароль">
                       </div>
-                      <div class="ui-group"> 
+                      <div class="ui-group">
                         <label class="c-white">Подтверждение нового поля</label>
                         <input class="ui-input" type="text" placeholder="Подвердите новый пароль">
                       </div>
                     </div>
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <button class="btn btn-primary" type="submit">Изменить пароль</button>
                     </div>
                   </form>
                 </div>
                 <div class="tabs-item" data-tab="#tab-change-wallet">
                   <form class="settings-form" action="#">
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <label class="c-white">Новый адрес USDT</label>
                       <input class="ui-input" type="text" placeholder="trc20">
                     </div>
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <label class="c-white">Для подтверждения операции введите пароль кабинета ТЕ</label>
                       <input class="ui-input" type="text" placeholder="Введите пароль">
                     </div>
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <button class="btn btn-primary" type="submit">Изменить адрес</button>
                     </div>
                   </form>
                 </div>
                 <div class="tabs-item" data-tab="#tab-change-user-data">
                   <form class="settings-form" action="#">
-                    <div class="settings-form-row"> 
-                      <div class="ui-group"> 
+                    <div class="settings-form-row">
+                      <div class="ui-group">
                         <label class="c-white">Фамилия</label>
                         <input class="ui-input" type="text" placeholder="Fedorovich">
                       </div>
-                      <div class="ui-group"> 
+                      <div class="ui-group">
                         <label class="c-white">Имя</label>
                         <input class="ui-input" type="text" placeholder="Vladlen">
                       </div>
                     </div>
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <label class="c-white">Отчество</label>
                       <input class="ui-input" type="text" placeholder="Fedorovich">
                     </div>
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <button class="btn btn-primary" type="submit">Изменить ФИО</button>
                     </div>
                   </form>
                 </div>
                 <div class="tabs-item" data-tab="#tab-telegam">
                   <form class="settings-form" action="#">
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <label class="c-white">Логин телеграм</label>
                       <input class="ui-input" type="text" placeholder="lolipop845">
                     </div>
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <button class="btn btn-primary" type="submit">Изменить логин</button>
                     </div>
                   </form>
                 </div>
                 <div class="tabs-item" data-tab="#tab-change-phone">
                   <form class="settings-form" action="#">
-                    <div class="settings-form-row"> 
-                      <div class="ui-group"> 
+                    <div class="settings-form-row">
+                      <div class="ui-group">
                         <label class="c-white">Номер телефона</label>
                         <input class="ui-input" type="text" placeholder="Номер телефона">
                       </div>
                       <button class="btn btn-blue">Отправить код</button>
                     </div>
                     <div class="settings-form-row">
-                      <div class="ui-group"> 
+                      <div class="ui-group">
                         <label class="c-white">Код для подтверждения</label>
                         <input class="ui-input" type="text" placeholder="8456">
                       </div>
                       <div class="ui-group v-hidden"></div>
                     </div>
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <button class="btn btn-primary" type="submit">Изменить номер</button>
                     </div>
                   </form>
                 </div>
                 <div class="tabs-item" data-tab="#tab-confirm-email">
                   <form class="settings-form" action="#">
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <label class="c-white">E-mail</label>
                       <input class="ui-input" type="text" placeholder="lolipop845@gmail.com">
                     </div>
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <button class="btn btn-primary" type="submit">Выслать письмо</button>
                     </div>
                   </form>
                 </div>
                 <div class="tabs-item" data-tab="#tab-notifications">
                   <form class="settings-form" action="#">
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <label class="c-white">Уведомления по email</label>
-                      <div class="ui-checkbox"> 
+                      <div class="ui-checkbox">
                         <input type="checkbox" id="notifications">
                         <label for="notifications">Получать уведомления по e-mail</label>
                       </div>
@@ -364,28 +473,30 @@
                       <button class="btn btn-primary" data-micromodal-trigger="add-props-modal">
                         <svg class="ico ico-mono-plus">
                           <use xlink:href="img/sprite-mono.svg#ico-mono-plus"></use>
-                        </svg><span>Добавить</span>
+                        </svg>
+                        <span>Добавить</span>
                       </button>
                     </div>
                   </div>
                   <div class="settings-form py-5 border-bottom">
-                    <div class="text-item c-white mb-5">Сохраните реквизиты платежных систем, на которые вы получаете оплату по сделкам на P2P-торгах</div>
-                    <div class="props-grid"> 
-                      <div class="props-header"> 
+                    <div class="text-item c-white mb-5">Сохраните реквизиты платежных систем, на которые вы получаете
+                      оплату по сделкам на P2P-торгах</div>
+                    <div class="props-grid">
+                      <div class="props-header">
                         <div class="text-item c-white">Название</div>
                         <div class="text-item c-white">Реквизиты</div>
                         <div class="text-item c-white v-hidden"></div>
                       </div>
-                      <div class="props-body"> 
-                        <div class="props-item"> 
-                          <div> 
+                      <div class="props-body">
+                        <div class="props-item">
+                          <div>
                             <div class="text-item">Альфа</div>
                           </div>
-                          <div> 
+                          <div>
                             <div class="text-item">23435535253523</div>
                             <div class="text-item">Петя Петров Петрович</div>
                           </div>
-                          <div class="row aling-center justify-end gap-10"> 
+                          <div class="row aling-center justify-end gap-10">
                             <button class="btn-reset" data-micromodal-trigger="edit-props-modal">
                               <svg class="ico ico-mono-pencil">
                                 <use xlink:href="img/sprite-mono.svg#ico-mono-pencil"></use>
@@ -398,15 +509,15 @@
                             </button>
                           </div>
                         </div>
-                        <div class="props-item"> 
-                          <div> 
+                        <div class="props-item">
+                          <div>
                             <div class="text-item">Альфа</div>
                           </div>
-                          <div> 
+                          <div>
                             <div class="text-item">23435535253523</div>
                             <div class="text-item">Петя Петров Петрович</div>
                           </div>
-                          <div class="row aling-center justify-end gap-10"> 
+                          <div class="row aling-center justify-end gap-10">
                             <button class="btn-reset" data-micromodal-trigger="edit-props-modal">
                               <svg class="ico ico-mono-pencil">
                                 <use xlink:href="img/sprite-mono.svg#ico-mono-pencil"></use>
@@ -447,23 +558,28 @@
           <div class="modal-header">
             <div class="section-title">Создать предложение на покупку ТЕ</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <form class="modal-form" action="#">
               <button class="btn-reset">
                 <svg class="ico ico-mono-trash">
                   <use xlink:href="img/sprite-mono.svg#ico-mono-trash"></use>
-                </svg><span>Очистить данные</span>
+                </svg>
+                <span>Очистить данные</span>
               </button>
               <div class="modal-form-row">
                 <div class="modal-form-column">
                   <div class="ui-group required">
-                    <label><span>Валюта</span>
-                      <div class="tooltip-container"> <span>
+                    <label>
+                      <span>Валюта</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
@@ -473,14 +589,18 @@
                       <option value="#">Доллар</option>
                     </select>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>Курс</span>
-                      <div class="tooltip-container"> <span>
+                  <div class="ui-group required">
+                    <label>
+                      <span>Курс</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
@@ -489,53 +609,64 @@
                       <div class="placeholder-text">RUB</div>
                     </div>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>Вы получите</span></label>
-                    <div class="ui-group-input"> 
+                  <div class="ui-group required">
+                    <label>
+                      <span>Вы получите</span>
+                    </label>
+                    <div class="ui-group-input">
                       <input class="ui-input" type="number" value="8859" required>
                       <div class="placeholder-text">TE</div>
                     </div>
                     <div class="notice text-item c-white">Минимальная сумма <span>500 </span>&#32;
-                      TE 
+                      TE
                     </div>
                   </div>
                   <div class="ui-group">
-                    <label> <span>Суточный оборот</span>
-                      <div class="tooltip-container"> <span>
+                    <label>
+                      <span>Суточный оборот</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
-                    <div class="ui-group-input"> 
+                    <div class="ui-group-input">
                       <input class="ui-input" type="number" required>
                       <div class="placeholder-text">RUB</div>
                     </div>
                   </div>
                 </div>
-                <div class="model-form-column"> 
+                <div class="model-form-column">
                   <div class="ui-group">
-                    <label><span>Мировой курс</span>
+                    <label>
+                      <span>Мировой курс</span>
                       <svg class="ico ico-mono-icon">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-icon"></use>
                       </svg>
                     </label>
-                    <div class="ui-group-input"> 
+                    <div class="ui-group-input">
                       <input class="ui-input" type="number" step="any" value="1.01">
                       <div class="placeholder-text">RUB</div>
                     </div>
                   </div>
                   <div class="ui-group required">
-                    <label><span>Страна</span>
-                      <div class="tooltip-container"> <span>
+                    <label>
+                      <span>Страна</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
@@ -545,14 +676,18 @@
                       <option value="">Казахстан</option>
                     </select>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>Способы оплаты</span>
-                      <div class="tooltip-container"> <span>
+                  <div class="ui-group required">
+                    <label>
+                      <span>Способы оплаты</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
@@ -561,7 +696,7 @@
                       <option value="">Электорнные деньги</option>
                       <option value="">Чек</option>
                     </select>
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <select class="js-choice" multiple>
                         <option value="1">Оплата 1</option>
                         <option value="2">Оплата 2</option>
@@ -573,47 +708,57 @@
                       <div class="text-item mt-3">Вы можете выбрать до 5 способов оплаты для оффера</div>
                     </div>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>К оплате</span></label>
-                    <div class="ui-group-input"> 
+                  <div class="ui-group required">
+                    <label>
+                      <span>К оплате</span>
+                    </label>
+                    <div class="ui-group-input">
                       <input class="ui-input" type="number" required>
                       <div class="placeholder-text">RUB</div>
                     </div>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>Лимит на одну сделку (в RUB) </span>
-                      <div class="tooltip-container"> <span>
+                  <div class="ui-group required">
+                    <label>
+                      <span>Лимит на одну сделку (в RUB) </span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
-                    <div class="row"> 
-                      <div class="ui-group-input"> 
+                    <div class="row">
+                      <div class="ui-group-input">
                         <input class="ui-input" type="number" required>
                         <div class="placeholder-text">min</div>
                       </div>
-                      <div class="ui-group-input"> 
+                      <div class="ui-group-input">
                         <input class="ui-input" type="number" required>
                         <div class="placeholder-text">max</div>
                       </div>
                     </div>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>Время оплаты</span>
-                      <div class="tooltip-container"> <span>
+                  <div class="ui-group required">
+                    <label>
+                      <span>Время оплаты</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
-                    <select class="custom-select"> 
+                    <select class="custom-select">
                       <option value="">Не выбрано</option>
                       <option value="">1ч</option>
                       <option value="">2ч</option>
@@ -623,14 +768,19 @@
               </div>
               <div class="modal-form-bottom">
                 <div class="modal-form-column">
-                  <button class="btn-reset"> 
+                  <button class="btn-reset">
                     <svg class="ico ico-mono-info">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                    </svg><span>Сохранить как шаблон оффера на покупку</span>
+                    </svg>
+                    <span>Сохранить как шаблон оффера на покупку</span>
                   </button>
                 </div>
                 <div class="modal-form-column">
-                  <button class="btn btn-primary btn-modal" type="submit" disabled><span>Создать предложение <br>на покупку</span></button>
+                  <button class="btn btn-primary btn-modal" type="submit" disabled>
+                    <span>Создать предложение
+                      <br>на покупку
+                    </span>
+                  </button>
                 </div>
               </div>
             </form>
@@ -651,23 +801,28 @@
           <div class="modal-header">
             <div class="section-title">Создать предложение на продажу ТЕ</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <form class="modal-form" action="#">
               <button class="btn-reset">
                 <svg class="ico ico-mono-trash">
                   <use xlink:href="img/sprite-mono.svg#ico-mono-trash"></use>
-                </svg><span>Очистить данные</span>
+                </svg>
+                <span>Очистить данные</span>
               </button>
               <div class="modal-form-row">
                 <div class="modal-form-column">
                   <div class="ui-group required">
-                    <label><span>Валюта</span>
-                      <div class="tooltip-container"> <span>
+                    <label>
+                      <span>Валюта</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
@@ -677,14 +832,18 @@
                       <option value="#">Доллар</option>
                     </select>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>Курс</span>
-                      <div class="tooltip-container"> <span>
+                  <div class="ui-group required">
+                    <label>
+                      <span>Курс</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
@@ -693,53 +852,64 @@
                       <div class="placeholder-text">RUB</div>
                     </div>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>Вы получите</span></label>
-                    <div class="ui-group-input"> 
+                  <div class="ui-group required">
+                    <label>
+                      <span>Вы получите</span>
+                    </label>
+                    <div class="ui-group-input">
                       <input class="ui-input" type="number" value="8859" required>
                       <div class="placeholder-text">TE</div>
                     </div>
                     <div class="notice text-item c-white">Минимальная сумма <span>500 </span>&#32;
-                      TE 
+                      TE
                     </div>
                   </div>
                   <div class="ui-group">
-                    <label> <span>Суточный оборот</span>
-                      <div class="tooltip-container"> <span>
+                    <label>
+                      <span>Суточный оборот</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
-                    <div class="ui-group-input"> 
+                    <div class="ui-group-input">
                       <input class="ui-input" type="number" required>
                       <div class="placeholder-text">RUB</div>
                     </div>
                   </div>
                 </div>
-                <div class="model-form-column"> 
+                <div class="model-form-column">
                   <div class="ui-group">
-                    <label><span>Мировой курс</span>
+                    <label>
+                      <span>Мировой курс</span>
                       <svg class="ico ico-mono-icon">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-icon"></use>
                       </svg>
                     </label>
-                    <div class="ui-group-input"> 
+                    <div class="ui-group-input">
                       <input class="ui-input" type="number" step="any" value="1.01">
                       <div class="placeholder-text">RUB</div>
                     </div>
                   </div>
                   <div class="ui-group required">
-                    <label><span>Страна</span>
-                      <div class="tooltip-container"> <span>
+                    <label>
+                      <span>Страна</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
@@ -749,14 +919,18 @@
                       <option value="">Казахстан</option>
                     </select>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>Способы оплаты</span>
-                      <div class="tooltip-container"> <span>
+                  <div class="ui-group required">
+                    <label>
+                      <span>Способы оплаты</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
@@ -765,7 +939,7 @@
                       <option value="">Электорнные деньги</option>
                       <option value="">Чек</option>
                     </select>
-                    <div class="ui-group"> 
+                    <div class="ui-group">
                       <select class="js-choice" multiple>
                         <option value="1">Оплата 1</option>
                         <option value="2">Оплата 2</option>
@@ -777,47 +951,57 @@
                       <div class="text-item mt-3">Вы можете выбрать до 5 способов оплаты для оффера</div>
                     </div>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>К оплате</span></label>
-                    <div class="ui-group-input"> 
+                  <div class="ui-group required">
+                    <label>
+                      <span>К оплате</span>
+                    </label>
+                    <div class="ui-group-input">
                       <input class="ui-input" type="number" required>
                       <div class="placeholder-text">RUB</div>
                     </div>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>Лимит на одну сделку (в RUB) </span>
-                      <div class="tooltip-container"> <span>
+                  <div class="ui-group required">
+                    <label>
+                      <span>Лимит на одну сделку (в RUB) </span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
-                    <div class="row"> 
-                      <div class="ui-group-input"> 
+                    <div class="row">
+                      <div class="ui-group-input">
                         <input class="ui-input" type="number" required>
                         <div class="placeholder-text">min</div>
                       </div>
-                      <div class="ui-group-input"> 
+                      <div class="ui-group-input">
                         <input class="ui-input" type="number" required>
                         <div class="placeholder-text">max</div>
                       </div>
                     </div>
                   </div>
-                  <div class="ui-group required"> 
-                    <label> <span>Время оплаты</span>
-                      <div class="tooltip-container"> <span>
+                  <div class="ui-group required">
+                    <label>
+                      <span>Время оплаты</span>
+                      <div class="tooltip-container">
+                        <span>
                           <svg class="ico ico-mono-info">
                             <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                          </svg></span>
-                        <div class="tooltip-items"> 
-                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                          </svg>
+                        </span>
+                        <div class="tooltip-items">
+                          <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                            заработанные проценты Вы сможете по окончанию 30 дней. </div>
                         </div>
                       </div>
                     </label>
-                    <select class="custom-select"> 
+                    <select class="custom-select">
                       <option value="">Не выбрано</option>
                       <option value="">1ч</option>
                       <option value="">2ч</option>
@@ -827,14 +1011,19 @@
               </div>
               <div class="modal-form-bottom">
                 <div class="modal-form-column">
-                  <button class="btn-reset"> 
+                  <button class="btn-reset">
                     <svg class="ico ico-mono-info">
                       <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                    </svg><span>Сохранить как шаблон оффера на продажу</span>
+                    </svg>
+                    <span>Сохранить как шаблон оффера на продажу</span>
                   </button>
                 </div>
                 <div class="modal-form-column">
-                  <button class="btn btn-primary btn-modal" type="submit" disabled><span>Создать предложение <br>на покупку</span></button>
+                  <button class="btn btn-primary btn-modal" type="submit" disabled>
+                    <span>Создать предложение
+                      <br>на покупку
+                    </span>
+                  </button>
                 </div>
               </div>
             </form>
@@ -853,10 +1042,14 @@
           <div class="modal-header">
             <div class="section-title">Выберите действие по офферу</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <div class="row justify-center">
-              <button class="btn btn-blue" style="width: fit-content"><span>Остановить оффер</span></button>
-              <button class="btn btn-primary" style="width: fit-content"><span> Отменить оффер</span></button>
+              <button class="btn btn-blue" style="width: fit-content">
+                <span>Остановить оффер</span>
+              </button>
+              <button class="btn btn-primary" style="width: fit-content">
+                <span> Отменить оффер</span>
+              </button>
             </div>
           </div>
         </div>
@@ -873,8 +1066,8 @@
           <div class="modal-header">
             <div class="section-title">Пополнение счета USDT</div>
           </div>
-          <div class="modal-content"> 
-            <div class="modal-form"> 
+          <div class="modal-content">
+            <div class="modal-form">
               <div class="modal-form-grid mb-7">
                 <div class="ui-group">
                   <label class="c-white">Токен</label>
@@ -884,7 +1077,7 @@
                     <option value="">USDT 3</option>
                   </select>
                 </div>
-                <div class="ui-group"> 
+                <div class="ui-group">
                   <label class="c-white">Сеть</label>
                   <select class="custom-select">
                     <option value="">Trc-20</option>
@@ -893,27 +1086,37 @@
                     <option value="">Trc-23</option>
                   </select>
                 </div>
-                <div class="modal-form-attention"> 
+                <div class="modal-form-attention">
                   <div class="text-item-2 mb-2">Внимание</div>
-                  <div class="text-item mb-2">После пополнения счета не забудьте отправить в службу поддержки txid и логин аккаунта</div><a class="link-grad red fw-600" href="#">Поддержка</a>
+                  <div class="text-item mb-2">После пополнения счета не забудьте отправить в службу поддержки txid и
+                    логин аккаунта</div>
+                  <a class="link-grad red fw-600" href="#">Поддержка</a>
                 </div>
               </div>
-              <div class="ui-group"> 
+              <div class="ui-group">
                 <input class="ui-input" type="text" placeholder="Кошелёк отправителя">
               </div>
               <div class="row column align-center">
-                <div><img src="img/qr-code.webp" alt=""></div>
+                <div>
+                  <img src="img/qr-code.webp" alt="">
+                </div>
                 <div class="text-item-3">1Pbfdg545dfdf5416sd5gg
-                  <button class="wallet-info-copy"><img src="img/grad-icon/copy.svg" alt=""></button>
+                  <button class="wallet-info-copy">
+                    <img src="img/grad-icon/copy.svg" alt="">
+                  </button>
                 </div>
               </div>
-              <button class="btn btn-primary" style="width: fit-content; margin: 20px auto 0"><span>Пополнить</span></button>
-              <div class="modal-form-notice"> 
+              <button class="btn btn-primary" style="width: fit-content; margin: 20px auto 0">
+                <span>Пополнить</span>
+              </button>
+              <div class="modal-form-notice">
                 <svg class="ico ico-mono-info">
                   <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
                 </svg>
                 <div class="text-item">
-                  Убедитесь, что ваш компьютер и браузер защищены, и ваша информация защищена от несанкционированного доступа или утечки информации. Пожалуйста, не размещайте другие цифровые активы, кроме USDT, по вышеуказанному адресу. 
+                  Убедитесь, что ваш компьютер и браузер защищены, и ваша информация защищена от несанкционированного
+                  доступа или утечки информации. Пожалуйста, не размещайте другие цифровые активы, кроме USDT, по
+                  вышеуказанному адресу.
                   В противном случае вы потеряете свои активы
                 </div>
               </div>
@@ -933,25 +1136,27 @@
           <div class="modal-header">
             <div class="section-title">Перевод другому участинку</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <form class="modal-form" action="#">
-              <div class="ui-group"> 
+              <div class="ui-group">
                 <input class="ui-input" type="text" placeholder="Логин пользователя">
               </div>
-              <div class="ui-group"> 
+              <div class="ui-group">
                 <div class="ui-group-input">
                   <input class="ui-input" type="text" placeholder="Сумма перевода">
                   <div class="placeholder-text">TE</div>
                 </div>
               </div>
               <div class="ui-group">
-                <button class="btn btn-primary shiny" type="submit" style="max-width: 380px; margin: 0 auto">Перевести</button>
+                <button class="btn btn-primary shiny" type="submit" style="max-width: 380px; margin: 0 auto">Перевести
+                </button>
               </div>
-              <div class="modal-form-notice"> 
+              <div class="modal-form-notice">
                 <svg class="ico ico-mono-alert">
                   <use xlink:href="img/sprite-mono.svg#ico-mono-alert"></use>
                 </svg>
-                <div class="text-item">Переводы внутри системы Trade Expert осуществляется без комисии и моментально</div>
+                <div class="text-item">Переводы внутри системы Trade Expert осуществляется без комисии и моментально
+                </div>
               </div>
             </form>
           </div>
@@ -969,21 +1174,21 @@
           <div class="modal-header">
             <div class="section-title">Запрос на вывод</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <form class="modal-form" action="#">
-              <div class="modal-form-row"> 
-                <div class="ui-group"> 
+              <div class="modal-form-row">
+                <div class="ui-group">
                   <label>Токен</label>
-                  <select class="custom-select"> 
+                  <select class="custom-select">
                     <option value="">USDT</option>
                     <option value="">USDT 2</option>
                     <option value="">USDT 3</option>
                     <option value="">USDT 4</option>
                   </select>
                 </div>
-                <div class="ui-group"> 
+                <div class="ui-group">
                   <label>Сеть</label>
-                  <select class="custom-select"> 
+                  <select class="custom-select">
                     <option value="">Trc-20</option>
                     <option value="">Trc-21</option>
                     <option value="">Trc-22</option>
@@ -991,29 +1196,32 @@
                   </select>
                 </div>
               </div>
-              <div class="ui-group"> 
+              <div class="ui-group">
                 <label>Адрес</label>
                 <input class="ui-input" type="text" placeholder="Ваш адрес">
               </div>
-              <div class="ui-group"> 
+              <div class="ui-group">
                 <label>Сумма</label>
                 <input class="ui-input" type="text" placeholder="Введите сумму">
               </div>
-              <div class="ui-group"> 
+              <div class="ui-group">
                 <button class="btn btn-blue btn-modal-2">Вся сумма</button>
               </div>
-              <div class="modal-form-bottom"> 
+              <div class="modal-form-bottom">
                 <div class="text-item c-white">Баланс</div>
                 <div class="title-item-2">5,6254.3 USDT</div>
               </div>
-              <div class="modal-form-notice"> 
+              <div class="modal-form-notice">
                 <svg class="ico ico-mono-info">
                   <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
                 </svg>
-                <div class="text-item">Важно! Отправка USDT TRC-20 происходит  по смарт-контракту. Не все онлайн-обменники работают с данными транзакциями. Просим перед выводом средств уточнять в обменнике возможность обработки вашей заявки.</div>
+                <div class="text-item">Важно! Отправка USDT TRC-20 происходит по смарт-контракту. Не все
+                  онлайн-обменники работают с данными транзакциями. Просим перед выводом средств уточнять в обменнике
+                  возможность обработки вашей заявки.</div>
               </div>
               <div class="ui-group mt-7">
-                <button class="btn btn-primary shiny" type="submit" style="max-width: 380px; margin: 0 auto">Вывести</button>
+                <button class="btn btn-primary shiny" type="submit" style="max-width: 380px; margin: 0 auto">Вывести
+                </button>
               </div>
             </form>
           </div>
@@ -1028,16 +1236,16 @@
               <use xlink:href="img/sprite-mono.svg#ico-mono-close"></use>
             </svg>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <div class="p2p-table-values">
               <div class="row align-center mb-7">
-                <select class="custom-select"> 
+                <select class="custom-select">
                   <option value="">Статус</option>
                   <option value="">Статус 1</option>
                   <option value="">Статус 2 </option>
                   <option value="">Статус 3</option>
                 </select>
-                <div class="text-item-4"> 
+                <div class="text-item-4">
                   <svg class="ico ico-mono-rename mr-2">
                     <use xlink:href="img/sprite-mono.svg#ico-mono-rename"></use>
                   </svg>только требующие внимания
@@ -1045,12 +1253,12 @@
               </div>
               <div class="p2p-table-values-inner">
                 <table class="p2p-table-layout">
-                  <thead> 
-                    <tr> 
+                  <thead>
+                    <tr>
                       <th>№</th>
                       <th>Сумма в ТЕ</th>
                       <th>Сумма в валюте</th>
-                      <th> 
+                      <th>
                         <select class="custom-select">
                           <option value="">Курс</option>
                           <option value="">UAH</option>
@@ -1059,7 +1267,7 @@
                       </th>
                       <th>Способы оплаты</th>
                       <th>Логин</th>
-                      <th> 
+                      <th>
                         <select class="custom-select">
                           <option value="">Дата</option>
                           <option value="">От ранних</option>
@@ -1069,36 +1277,91 @@
                       <th>Статус</th>
                     </tr>
                   </thead>
-                  <tbody> 
+                  <tbody>
                     <tr>
-                      <th><a class="star-decoration" href="#" onclick="APP.Plugins.Micromodal.change('get-money-confirm-modal')">2568123</a></th>
-                      <td> <a href="#">5,6254.3 RUB</a></td>
-                      <td> <a href="#">7,85 RUB</a></td>
-                      <td> <a href="#">7,85 RUB</a></td>
-                      <td> <a href="#">Сбербанк</a></td>
-                      <td> <a href="#">335,91</a></td>
-                      <td> <a href="#">04.09.2021 <br><span>17:48:54</span></a></td>
+                      <th>
+                        <a class="star-decoration" href="#"
+                         onclick="APP.Plugins.Micromodal.change('get-money-confirm-modal')">2568123</a>
+                      </th>
+                      <td>
+                        <a href="#">5,6254.3 RUB</a>
+                      </td>
+                      <td>
+                        <a href="#">7,85 RUB</a>
+                      </td>
+                      <td>
+                        <a href="#">7,85 RUB</a>
+                      </td>
+                      <td>
+                        <a href="#">Сбербанк</a>
+                      </td>
+                      <td>
+                        <a href="#">335,91</a>
+                      </td>
+                      <td>
+                        <a href="#">04.09.2021
+                          <br>
+                          <span>17:48:54</span>
+                        </a>
+                      </td>
                       <td class="complete">Исполнен</td>
                     </tr>
                     <tr>
-                      <th><a class="star-decoration" href="#" onclick="APP.Plugins.Micromodal.change('get-money-confirm-modal')">2568123</a></th>
-                      <td> <a href="#">5,6254.3 RUB</a></td>
-                      <td> <a href="#">7,85 RUB</a></td>
-                      <td> <a href="#">7,85 RUB</a></td>
-                      <td> <a href="#">Сбербанк</a></td>
-                      <td> <a href="#">335,91</a></td>
-                      <td> <a href="#">04.09.2021 <br><span>17:48:54</span></a></td>
+                      <th>
+                        <a class="star-decoration" href="#"
+                         onclick="APP.Plugins.Micromodal.change('get-money-confirm-modal')">2568123</a>
+                      </th>
+                      <td>
+                        <a href="#">5,6254.3 RUB</a>
+                      </td>
+                      <td>
+                        <a href="#">7,85 RUB</a>
+                      </td>
+                      <td>
+                        <a href="#">7,85 RUB</a>
+                      </td>
+                      <td>
+                        <a href="#">Сбербанк</a>
+                      </td>
+                      <td>
+                        <a href="#">335,91</a>
+                      </td>
+                      <td>
+                        <a href="#">04.09.2021
+                          <br>
+                          <span>17:48:54</span>
+                        </a>
+                      </td>
                       <td class="complete">Исполнен</td>
                     </tr>
                     <tr>
-                      <th><a class="star-decoration" href="#">2568123</a></th>
-                      <td> <a href="#">5,6254.3 RUB</a></td>
-                      <td> <a href="#">7,85 RUB</a></td>
-                      <td> <a href="#">7,85 RUB</a></td>
-                      <td> <a href="#">Сбербанк</a></td>
-                      <td> <a href="#">335,91</a></td>
-                      <td> <a href="#">04.09.2021 <br><span>17:48:54</span></a></td>
-                      <td class="denied">Отменен<br>продавцом</td>
+                      <th>
+                        <a class="star-decoration" href="#">2568123</a>
+                      </th>
+                      <td>
+                        <a href="#">5,6254.3 RUB</a>
+                      </td>
+                      <td>
+                        <a href="#">7,85 RUB</a>
+                      </td>
+                      <td>
+                        <a href="#">7,85 RUB</a>
+                      </td>
+                      <td>
+                        <a href="#">Сбербанк</a>
+                      </td>
+                      <td>
+                        <a href="#">335,91</a>
+                      </td>
+                      <td>
+                        <a href="#">04.09.2021
+                          <br>
+                          <span>17:48:54</span>
+                        </a>
+                      </td>
+                      <td class="denied">Отменен
+                        <br>продавцом
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -1116,7 +1379,7 @@
               <use xlink:href="img/sprite-mono.svg#ico-mono-close"></use>
             </svg>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <div class="row justify-between align-center mb-5">
               <div class="text-item-2">Вывод</div>
               <div class="row align-center gap-10">
@@ -1134,14 +1397,25 @@
             <div class="get-money-container mb-5">
               <div class="get-money-value">0%</div>
               <div class="get-money-slider"></div>
-              <div class="get-money-buttons"> 
-                <button data-value="25"><span class="link-grad fw-600">25%</span></button>
-                <button data-value="50"><span class="link-grad fw-600">50%</span></button>
-                <button data-value="75"><span class="link-grad fw-600">75%</span></button>
-                <button data-value="100"><span class="link-grad fw-600">Max</span></button>
+              <div class="get-money-buttons">
+                <button data-value="25">
+                  <span class="link-grad fw-600">25%</span>
+                </button>
+                <button data-value="50">
+                  <span class="link-grad fw-600">50%</span>
+                </button>
+                <button data-value="75">
+                  <span class="link-grad fw-600">75%</span>
+                </button>
+                <button data-value="100">
+                  <span class="link-grad fw-600">Max</span>
+                </button>
               </div>
             </div>
-            <button class="btn btn-primary" onclick="APP.Plugins.Micromodal.change('get-money-confirm-modal')" style="max-width: 280px; margin: 0 auto"><span>Вывод</span></button>
+            <button class="btn btn-primary" onclick="APP.Plugins.Micromodal.change('get-money-confirm-modal')"
+             style="max-width: 280px; margin: 0 auto">
+              <span>Вывод</span>
+            </button>
           </div>
         </div>
       </div>
@@ -1154,7 +1428,7 @@
               <use xlink:href="img/sprite-mono.svg#ico-mono-close"></use>
             </svg>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <div class="row justify-between align-center mb-5">
               <div class="text-item-2">Реинвест</div>
               <div class="row align-center gap-10">
@@ -1172,14 +1446,25 @@
             <div class="get-money-container mb-5">
               <div class="get-money-value">0%</div>
               <div class="get-money-slider"></div>
-              <div class="get-money-buttons"> 
-                <button data-value="25"><span class="link-grad fw-600">25%</span></button>
-                <button data-value="50"><span class="link-grad fw-600">50%</span></button>
-                <button data-value="75"><span class="link-grad fw-600">75%</span></button>
-                <button data-value="100"><span class="link-grad fw-600">Max</span></button>
+              <div class="get-money-buttons">
+                <button data-value="25">
+                  <span class="link-grad fw-600">25%</span>
+                </button>
+                <button data-value="50">
+                  <span class="link-grad fw-600">50%</span>
+                </button>
+                <button data-value="75">
+                  <span class="link-grad fw-600">75%</span>
+                </button>
+                <button data-value="100">
+                  <span class="link-grad fw-600">Max</span>
+                </button>
               </div>
             </div>
-            <button class="btn btn-primary" onclick="APP.Plugins.Micromodal.change('get-money-confirm-modal')" style="max-width: 280px; margin: 0 auto"><span>Реинвест</span></button>
+            <button class="btn btn-primary" onclick="APP.Plugins.Micromodal.change('get-money-confirm-modal')"
+             style="max-width: 280px; margin: 0 auto">
+              <span>Реинвест</span>
+            </button>
           </div>
         </div>
       </div>
@@ -1192,7 +1477,7 @@
               <use xlink:href="img/sprite-mono.svg#ico-mono-close"></use>
             </svg>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <div class="row justify-between align-center mb-5">
               <div class="text-item-2">Вывод</div>
               <div class="row align-center gap-10">
@@ -1217,8 +1502,12 @@
               <input class="ui-input" type="text" placeholder="2540655">
             </div>
             <div class="row justify-center align-center">
-              <button class="btn btn-black" style="width: fit-content"><span>Отмена</span></button>
-              <button class="btn btn-primary" style="width: fit-content"><span>Вывод USDT</span></button>
+              <button class="btn btn-black" style="width: fit-content">
+                <span>Отмена</span>
+              </button>
+              <button class="btn btn-primary" style="width: fit-content">
+                <span>Вывод USDT</span>
+              </button>
             </div>
           </div>
         </div>
@@ -1235,40 +1524,52 @@
           <div class="modal-header">
             <div class="title-item-2">Добавление платежных реквизитов</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <form class="modal-form" action="#">
-              <div class="ui-group"> 
-                <label><span class="c-white">Название</span>
-                  <div class="tooltip-container"> <span>
+              <div class="ui-group">
+                <label>
+                  <span class="c-white">Название</span>
+                  <div class="tooltip-container">
+                    <span>
                       <svg class="ico ico-mono-info">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                      </svg></span>
-                    <div class="tooltip-items"> 
-                      <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                      </svg>
+                    </span>
+                    <div class="tooltip-items">
+                      <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                        заработанные проценты Вы сможете по окончанию 30 дней. </div>
                     </div>
                   </div>
                 </label>
                 <input class="ui-input" type="text" placeholder="Ваш адрес">
               </div>
-              <div class="ui-group"> 
-                <label><span class="c-white">Реквизиты</span>
-                  <div class="tooltip-container"> <span>
+              <div class="ui-group">
+                <label>
+                  <span class="c-white">Реквизиты</span>
+                  <div class="tooltip-container">
+                    <span>
                       <svg class="ico ico-mono-info">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                      </svg></span>
-                    <div class="tooltip-items"> 
-                      <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                      </svg>
+                    </span>
+                    <div class="tooltip-items">
+                      <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                        заработанные проценты Вы сможете по окончанию 30 дней. </div>
                     </div>
                   </div>
                 </label>
                 <input class="ui-input" type="text" placeholder="Введите сумму">
               </div>
-              <div class="ui-group"> 
-                <label> <span class="c-white">Комментарий (необязательно)</span></label>
+              <div class="ui-group">
+                <label>
+                  <span class="c-white">Комментарий (необязательно)</span>
+                </label>
                 <textarea class="ui-input"> </textarea>
               </div>
-              <div class="ui-group"> 
-                <button class="btn btn-primary" style="width: fit-content; margin: 0 auto"><span>Добавить</span></button>
+              <div class="ui-group">
+                <button class="btn btn-primary" style="width: fit-content; margin: 0 auto">
+                  <span>Добавить</span>
+                </button>
               </div>
             </form>
           </div>
@@ -1287,11 +1588,15 @@
             <div class="title-item-2">Удаление реквизита</div>
           </div>
           <div class="modal-content">
-            <form action="#"> 
+            <form action="#">
               <div class="text-item text-center c-white mb-5">Вы уверены, что хотите удалить этот реквизит?</div>
-              <div class="row align-center justify-center"> 
-                <button class="btn btn-blue" style="width: fit-content"><span>Отмена</span></button>
-                <button class="btn btn-primary" style="width: fit-content"><span>Удалить</span></button>
+              <div class="row align-center justify-center">
+                <button class="btn btn-blue" style="width: fit-content">
+                  <span>Отмена</span>
+                </button>
+                <button class="btn btn-primary" style="width: fit-content">
+                  <span>Удалить</span>
+                </button>
               </div>
             </form>
           </div>
@@ -1309,40 +1614,52 @@
           <div class="modal-header">
             <div class="title-item-2">Редактирование платежных реквизитов</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <form class="modal-form" action="#">
-              <div class="ui-group"> 
-                <label><span class="c-white">Название</span>
-                  <div class="tooltip-container"> <span>
+              <div class="ui-group">
+                <label>
+                  <span class="c-white">Название</span>
+                  <div class="tooltip-container">
+                    <span>
                       <svg class="ico ico-mono-info">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                      </svg></span>
-                    <div class="tooltip-items"> 
-                      <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                      </svg>
+                    </span>
+                    <div class="tooltip-items">
+                      <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                        заработанные проценты Вы сможете по окончанию 30 дней. </div>
                     </div>
                   </div>
                 </label>
                 <input class="ui-input" type="text" placeholder="Ваш адрес">
               </div>
-              <div class="ui-group"> 
-                <label><span class="c-white">Реквизиты</span>
-                  <div class="tooltip-container"> <span>
+              <div class="ui-group">
+                <label>
+                  <span class="c-white">Реквизиты</span>
+                  <div class="tooltip-container">
+                    <span>
                       <svg class="ico ico-mono-info">
                         <use xlink:href="img/sprite-mono.svg#ico-mono-info"></use>
-                      </svg></span>
-                    <div class="tooltip-items"> 
-                      <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать заработанные проценты Вы сможете по окончанию 30 дней. </div>
+                      </svg>
+                    </span>
+                    <div class="tooltip-items">
+                      <div class="value-2">Вывод основной суммы будет заблокирован до окончания контракта. Снимать
+                        заработанные проценты Вы сможете по окончанию 30 дней. </div>
                     </div>
                   </div>
                 </label>
                 <input class="ui-input" type="text" placeholder="Введите сумму">
               </div>
-              <div class="ui-group"> 
-                <label> <span class="c-white">Комментарий (необязательно)</span></label>
+              <div class="ui-group">
+                <label>
+                  <span class="c-white">Комментарий (необязательно)</span>
+                </label>
                 <textarea class="ui-input"> </textarea>
               </div>
-              <div class="ui-group"> 
-                <button class="btn btn-primary" style="width: fit-content; margin: 0 auto"><span>Добавить</span></button>
+              <div class="ui-group">
+                <button class="btn btn-primary" style="width: fit-content; margin: 0 auto">
+                  <span>Добавить</span>
+                </button>
               </div>
             </form>
           </div>
@@ -1360,21 +1677,29 @@
           <div class="modal-header">
             <div class="section-title">Внимание</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <form class="modal-form" action="#">
               <div class="text-item c-white mb-3">Вы собираетесь инвестировать денежные средства на три месяца. </div>
-              <div class="text-item c-white mb-3">Вывод основной суммы будет заблокирован на три месяца до окончания контракта. Снимать заработанные проценты, а так же производить реинвестирование Вы сможете по окончанию 30 дней. По окончанию контракта, Вы в полном объеме можете снимать и выводить денежные средства вместе с заработанными процентами.</div>
-              <div class="text-item c-white mb-3">Нажимая инвестировать Вы подтверждаете свое согласие на данные условия.</div>
+              <div class="text-item c-white mb-3">Вывод основной суммы будет заблокирован на три месяца до окончания
+                контракта. Снимать заработанные проценты, а так же производить реинвестирование Вы сможете по окончанию
+                30 дней. По окончанию контракта, Вы в полном объеме можете снимать и выводить денежные средства вместе с
+                заработанными процентами.</div>
+              <div class="text-item c-white mb-3">Нажимая инвестировать Вы подтверждаете свое согласие на данные
+                условия.</div>
               <div class="ui-checkbox mb-7">
                 <input type="checkbox" id="invest-agree-modal">
-                <label for="invest-agree-modal">Я согласен (на) со всеми <a class="c-white" href="#">правилами и положениями</a></label>
+                <label for="invest-agree-modal">Я согласен (на) со всеми <a class="c-white" href="#">правилами и
+                    положениями</a>
+                </label>
               </div>
               <div class="row column align-center gap-0">
-                <div class="ui-group"> 
+                <div class="ui-group">
                   <input class="ui-input" type="text" placeholder="Сумма инвестиции" style="min-width: 280px">
                 </div>
-                <div class="ui-group"> 
-                  <button class="btn btn-primary shiny" style="min-width: 280px"><span>Инвестировать</span></button>
+                <div class="ui-group">
+                  <button class="btn btn-primary shiny" style="min-width: 280px">
+                    <span>Инвестировать</span>
+                  </button>
                 </div>
               </div>
             </form>
@@ -1393,10 +1718,12 @@
           <div class="modal-header">
             <div class="title-item-2">Переводите оплату только с банка “Сбербанк”</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <div class="row column align-center gap-0">
               <div class="text-item c-white mb-8">Переводы между разными банками могут идти до 5 дней</div>
-              <button class="btn btn-primary" style="width: fit-content"><span>Понятно</span></button>
+              <button class="btn btn-primary" style="width: fit-content">
+                <span>Понятно</span>
+              </button>
             </div>
           </div>
         </div>
@@ -1411,20 +1738,25 @@
             </svg>
           </div>
           <div class="modal-header">
-            <div class="title-item-2 text-center">Подтвердите отправку 340 TE на баланс Gold 456, если вы получили оплату по сделке #4567</div>
+            <div class="title-item-2 text-center">Подтвердите отправку 340 TE на баланс Gold 456, если вы получили
+              оплату по сделке #4567</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <form class="modal-form" action="#">
               <div class="row column align-center gap-0">
                 <div class="ui-checkbox mb-5">
                   <input type="checkbox" id="receive-money">
-                  <label for="receive-money">Я согласен (на) со всеми <a class="c-white" href="#">правилами и положениями</a></label>
+                  <label for="receive-money">Я согласен (на) со всеми <a class="c-white" href="#">правилами и
+                      положениями</a>
+                  </label>
                 </div>
                 <div class="ui-group" style="min-width: 320px; max-width: 420px; width: 100%">
                   <input class="ui-input" type="text" placeholder="Код двухфакторной авторизации">
                 </div>
-                <div class="ui-group"> 
-                  <button class="btn btn-primary"> <span>Подтвердить</span></button>
+                <div class="ui-group">
+                  <button class="btn btn-primary">
+                    <span>Подтвердить</span>
+                  </button>
                 </div>
               </div>
             </form>
@@ -1443,11 +1775,15 @@
           <div class="modal-header">
             <div class="title-item-2">Вы точно уверены что оплатили?</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <form class="modal-form" action="#">
               <div class="row align-center justify-center">
-                <button class="btn btn-blue" style="width: fit-content"><span>Я оплатил</span></button>
-                <button class="btn btn-primary" style="width: fit-content"><span>Отмена</span></button>
+                <button class="btn btn-blue" style="width: fit-content">
+                  <span>Я оплатил</span>
+                </button>
+                <button class="btn btn-primary" style="width: fit-content">
+                  <span>Отмена</span>
+                </button>
               </div>
             </form>
           </div>
@@ -1465,12 +1801,13 @@
           <div class="modal-header">
             <div class="title-item-2">Оцените, пожалуйста, сделку</div>
           </div>
-          <div class="modal-content"> 
+          <div class="modal-content">
             <form class="modal-form" action="#">
               <div class="modal-form-row mb-6">
                 <div class="rate-radio good">
                   <input type="radio" name="rate" id="rate-good" required>
-                  <label for="rate-good"> <span>Хорошо</span>
+                  <label for="rate-good">
+                    <span>Хорошо</span>
                     <svg class="ico ico-color-good-review">
                       <use xlink:href="img/sprite-color.svg#ico-color-good-review"></use>
                     </svg>
@@ -1478,19 +1815,24 @@
                 </div>
                 <div class="rate-radio sad">
                   <input type="radio" name="rate" id="rate-sad" required>
-                  <label for="rate-sad"> <span>Плохо</span>
+                  <label for="rate-sad">
+                    <span>Плохо</span>
                     <svg class="ico ico-color-sad-review">
                       <use xlink:href="img/sprite-color.svg#ico-color-sad-review"></use>
                     </svg>
                   </label>
                 </div>
               </div>
-              <div class="ui-group"> 
-                <label> <span class="c-white">Комментарий (необязательно)</span></label>
+              <div class="ui-group">
+                <label>
+                  <span class="c-white">Комментарий (необязательно)</span>
+                </label>
                 <textarea class="ui-input"> </textarea>
               </div>
-              <div class="ui-group"> 
-                <button class="btn btn-primary" style="width: fit-content; margin: 0 auto"><span>Оценить сделку</span></button>
+              <div class="ui-group">
+                <button class="btn btn-primary" style="width: fit-content; margin: 0 auto">
+                  <span>Оценить сделку</span>
+                </button>
               </div>
             </form>
           </div>
@@ -1500,4 +1842,5 @@
     <script src="js/vendor.js"></script>
     <script src="js/app.js"></script>
   </body>
+
 </html>
