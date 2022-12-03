@@ -34,7 +34,7 @@
   <body>
     <header class="header header-account">
       <div class="container">
-        <div class="row justify-end align-center gap-0">
+        <div class="row header__row">
           <div class="header-item">
             <div class="assets">
               <svg class="ico ico-color-tether-usdt">
@@ -236,9 +236,11 @@
                   <div class="ui-group-input">
                     <input class="ui-input" type="url" value="http://tradeexpert.ru/4512136484948..." disabled>
                     <button class="placeholder-icon c-white">
-                      <svg class="ico ico-mono-copy">
-                        <use xlink:href="img/sprite-mono.svg#ico-mono-copy"></use>
-                      </svg>
+                      <span class="copy-tooltip-opener">
+                        <svg class="ico ico-mono-copy">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-copy"></use>
+                        </svg>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -359,6 +361,21 @@
                     </svg>
                   </button>
                 </div>
+                <div class="swiper-slide">
+                  <div class="referal-levels-percent">10% в месяц</div>
+                  <div class="referal-levels-image">
+                    <img src="img/levels/icon4.svg" alt="">
+                  </div>
+                  <div class="referal-levels-text">Личные приглашения <b>100 человек</b>. Со следующего месяца вы
+                    получаете 10%</div>
+                  <button class="referal-levels-btn"
+                   style="background-image:linear-gradient(264.01deg, #3094E8 -7.07%, #00F3FF 97.27%)">
+                    <span>VIP</span>
+                    <svg class="ico ico-mono-arrow-down">
+                      <use xlink:href="img/sprite-mono.svg#ico-mono-arrow-down"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
               <div class="swiper-button-next"> </div>
               <div class="swiper-button-prev"></div>
@@ -370,183 +387,279 @@
           <div class="container">
             <div class="line-marketing__box">
               <h2 class="line-marketing__title">Линейный маркетинг</h2>
-              <div class="line-marketing__row">
-                <div class="line-marketing__col line-marketing__col_col1">
-                  <h3 class="line-marketing__col-title">Инвестиционные контракты</h3>
-                  <table class="line-marketing__contracts-table">
+              <div class="scroll-wrapper">
+                <div class="line-marketing__row">
+                  <div class="line-marketing__col line-marketing__col_col1">
+                    <h3 class="line-marketing__col-title">Инвестиционные контракты</h3>
+                    <table class="line-marketing__contracts-table">
+                      <tr>
+                        <td>
+                          <strong class="gradient-text">Small</strong>
+                        </td>
+                        <td>1% от депозита</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong class="gradient-text">Optimal</strong>
+                        </td>
+                        <td>2% от депозита</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong class="gradient-text">Business</strong>
+                        </td>
+                        <td>2% от депозита</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong class="gradient-text">Investor</strong>
+                        </td>
+                        <td>3% от депозита</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="line-marketing__col line-marketing__col_col2">
+                    <h3 class="line-marketing__col-title">Инвестиционные контракты</h3>
+                    <ul class="line-marketing__contracts-list">
+                      <li>Приглашение - 10 чел переходите на серебрянный аккаунт +1% к выплатам от инвестиций партнера
+                      </li>
+                      <li>Приглашение - 100 чел переходите на золотой аккаунт +2% к выплатам от инвестиций партнера</li>
+                      <li>Приглашение - 350 чел переходите на платиновый аккаунт +3% к выплатам от инвестиций партнера
+                      </li>
+                      <li>Приглашение - 1000 чел переходите на VIP аккаунт +2% к выплатам от инвестиций партнера</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="scroll-wrapper">
+                <div class="line-marketing__col line-marketing-once">
+                  <table class="line-marketing-once__table">
                     <tr>
-                      <td>
-                        <strong class="gradient-text">Small</strong>
-                      </td>
-                      <td>1% от депозита</td>
+                      <th colspan="5">Линейный маркетинг 1 </th>
                     </tr>
-                    <tr>
-                      <td>
-                        <strong class="gradient-text">Optimal</strong>
-                      </td>
-                      <td>2% от депозита</td>
+                    <tr class="gradient-text">
+                      <td>Бронза</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>4</td>
                     </tr>
-                    <tr>
-                      <td>
-                        <strong class="gradient-text">Business</strong>
-                      </td>
-                      <td>2% от депозита</td>
+                    <tr class="gradient-text">
+                      <td>Серебро</td>
+                      <td>1</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>12</td>
                     </tr>
-                    <tr>
-                      <td>
-                        <strong class="gradient-text">Investor</strong>
-                      </td>
-                      <td>3% от депозита</td>
+                    <tr class="gradient-text">
+                      <td>Золото</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>16</td>
+                    </tr>
+                    <tr class="gradient-text">
+                      <td>Платина</td>
+                      <td>1</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>20</td>
+                    </tr>
+                    <tr class="gradient-text">
+                      <td>VIP</td>
+                      <td>1</td>
+                      <td>7</td>
+                      <td>7</td>
+                      <td>28</td>
                     </tr>
                   </table>
                 </div>
-                <div class="line-marketing__col line-marketing__col_col2">
-                  <h3 class="line-marketing__col-title">Инвестиционные контракты</h3>
-                  <ul class="line-marketing__contracts-list">
-                    <li>Приглашение - 10 чел переходите на серебрянный аккаунт +1% к выплатам от инвестиций партнера
-                    </li>
-                    <li>Приглашение - 100 чел переходите на золотой аккаунт +2% к выплатам от инвестиций партнера</li>
-                    <li>Приглашение - 350 чел переходите на платиновый аккаунт +3% к выплатам от инвестиций партнера
-                    </li>
-                    <li>Приглашение - 1000 чел переходите на VIP аккаунт +2% к выплатам от инвестиций партнера</li>
-                  </ul>
+              </div>
+              <div class="scroll-wrapper">
+                <div class="line-marketing__col line-marketing-once">
+                  <table class="line-marketing-once__table">
+                    <tr>
+                      <th> </th>
+                      <th>Small</th>
+                      <th>Optimal</th>
+                      <th>Business</th>
+                      <th>Investor</th>
+                    </tr>
+                    <tr class="gradient-text">
+                      <td>Бронза</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>4</td>
+                    </tr>
+                    <tr class="gradient-text">
+                      <td>Серебро</td>
+                      <td>1</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>12</td>
+                    </tr>
+                    <tr class="gradient-text">
+                      <td>Золото</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>16</td>
+                    </tr>
+                    <tr class="gradient-text">
+                      <td>Платина</td>
+                      <td>1</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>20</td>
+                    </tr>
+                    <tr class="gradient-text">
+                      <td>VIP</td>
+                      <td>1</td>
+                      <td>7</td>
+                      <td>7</td>
+                      <td>28</td>
+                    </tr>
+                  </table>
                 </div>
               </div>
               <h2 class="line-marketing__title">Командный бонус</h2>
-              <div class="line-marketing__row">
-                <div class="line-marketing__col line-marketing__col_col1 line-marketing__col_text">
-                  <p class="gradient-text">Как только будет достигнута определенная общая сумма от инвестиций ваших
-                    партнеров, вы получите единоразово бонус в размере 1%</p>
-                </div>
-                <div class="line-marketing__col line-marketing__col_col2">
-                  <table class="line-marketing__bonus-table">
-                    <tr>
-                      <th>Общие инвестиции</th>
-                      <th></th>
-                      <th>Бонус</th>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="gradient-text">3000$</span>
-                      </td>
-                      <td>
-                        <span class="line-marketing__bonus-table-arrow"></span>
-                      </td>
-                      <td>
-                        <span class="gradient-text">30$</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="gradient-text">5000$</span>
-                      </td>
-                      <td>
-                        <span class="line-marketing__bonus-table-arrow"></span>
-                      </td>
-                      <td>
-                        <span class="gradient-text">50$</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="gradient-text">10000$</span>
-                      </td>
-                      <td>
-                        <span class="line-marketing__bonus-table-arrow"></span>
-                      </td>
-                      <td>
-                        <span class="gradient-text">100$</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="gradient-text">20000$</span>
-                      </td>
-                      <td>
-                        <span class="line-marketing__bonus-table-arrow"></span>
-                      </td>
-                      <td>
-                        <span class="gradient-text">200$</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="gradient-text">40000$</span>
-                      </td>
-                      <td>
-                        <span class="line-marketing__bonus-table-arrow"></span>
-                      </td>
-                      <td>
-                        <span class="gradient-text">400$</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="gradient-text">80000$</span>
-                      </td>
-                      <td>
-                        <span class="line-marketing__bonus-table-arrow"></span>
-                      </td>
-                      <td>
-                        <span class="gradient-text">800$</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="gradient-text">100000$</span>
-                      </td>
-                      <td>
-                        <span class="line-marketing__bonus-table-arrow"></span>
-                      </td>
-                      <td>
-                        <span class="gradient-text">1000$</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="gradient-text">200000$</span>
-                      </td>
-                      <td>
-                        <span class="line-marketing__bonus-table-arrow"></span>
-                      </td>
-                      <td>
-                        <span class="gradient-text">2000$</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="gradient-text">400000$</span>
-                      </td>
-                      <td>
-                        <span class="line-marketing__bonus-table-arrow"></span>
-                      </td>
-                      <td>
-                        <span class="gradient-text">4000$</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="gradient-text">800000$</span>
-                      </td>
-                      <td>
-                        <span class="line-marketing__bonus-table-arrow"></span>
-                      </td>
-                      <td>
-                        <span class="gradient-text">8000$</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="gradient-text">1000000$</span>
-                      </td>
-                      <td>
-                        <span class="line-marketing__bonus-table-arrow"></span>
-                      </td>
-                      <td>
-                        <span class="gradient-text">10000$</span>
-                      </td>
-                    </tr>
-                  </table>
+              <div class="scroll-wrapper">
+                <div class="line-marketing__row">
+                  <div class="line-marketing__col line-marketing__col_col1 line-marketing__col_text">
+                    <p class="gradient-text">Как только будет достигнута определенная общая сумма от инвестиций ваших
+                      партнеров, вы получите единоразово бонус в размере 1%</p>
+                  </div>
+                  <div class="line-marketing__col line-marketing__col_col2">
+                    <table class="line-marketing__bonus-table">
+                      <tr>
+                        <th>Общие инвестиции</th>
+                        <th></th>
+                        <th>Бонус</th>
+                      </tr>
+                      <tr class="achieved">
+                        <td>
+                          <span class="gradient-text">3000$</span>
+                        </td>
+                        <td>
+                          <span class="line-marketing__bonus-table-arrow"></span>
+                        </td>
+                        <td>
+                          <span class="gradient-text">30$</span>
+                        </td>
+                      </tr>
+                      <tr class="achieved">
+                        <td>
+                          <span class="gradient-text">5000$</span>
+                        </td>
+                        <td>
+                          <span class="line-marketing__bonus-table-arrow"></span>
+                        </td>
+                        <td>
+                          <span class="gradient-text">50$</span>
+                        </td>
+                      </tr>
+                      <tr class="achieved">
+                        <td>
+                          <span class="gradient-text">10000$</span>
+                        </td>
+                        <td>
+                          <span class="line-marketing__bonus-table-arrow"></span>
+                        </td>
+                        <td>
+                          <span class="gradient-text">100$</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="gradient-text">20000$</span>
+                        </td>
+                        <td>
+                          <span class="line-marketing__bonus-table-arrow"></span>
+                        </td>
+                        <td>
+                          <span class="gradient-text">200$</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="gradient-text">40000$</span>
+                        </td>
+                        <td>
+                          <span class="line-marketing__bonus-table-arrow"></span>
+                        </td>
+                        <td>
+                          <span class="gradient-text">400$</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="gradient-text">80000$</span>
+                        </td>
+                        <td>
+                          <span class="line-marketing__bonus-table-arrow"></span>
+                        </td>
+                        <td>
+                          <span class="gradient-text">800$</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="gradient-text">100000$</span>
+                        </td>
+                        <td>
+                          <span class="line-marketing__bonus-table-arrow"></span>
+                        </td>
+                        <td>
+                          <span class="gradient-text">1000$</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="gradient-text">200000$</span>
+                        </td>
+                        <td>
+                          <span class="line-marketing__bonus-table-arrow"></span>
+                        </td>
+                        <td>
+                          <span class="gradient-text">2000$</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="gradient-text">400000$</span>
+                        </td>
+                        <td>
+                          <span class="line-marketing__bonus-table-arrow"></span>
+                        </td>
+                        <td>
+                          <span class="gradient-text">4000$</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="gradient-text">800000$</span>
+                        </td>
+                        <td>
+                          <span class="line-marketing__bonus-table-arrow"></span>
+                        </td>
+                        <td>
+                          <span class="gradient-text">8000$</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="gradient-text">1000000$</span>
+                        </td>
+                        <td>
+                          <span class="line-marketing__bonus-table-arrow"></span>
+                        </td>
+                        <td>
+                          <span class="gradient-text">10000$</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
