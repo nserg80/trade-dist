@@ -244,7 +244,7 @@
               </div>
             </form>
             <div class="invest-wrapper">
-              <div class="section-title small text-center mb-7">Инвестиционные пакеты</div>
+              <div class="section-title small mb-7 invest-wrapper__title">Инвестиционные пакеты</div>
               <div class="invest-slider" data-slider data-slides="3" data-space="30">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -345,6 +345,8 @@
                   </div>
                 </div>
                 <div class="swiper-pagination"> </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
             </div>
           </div>
@@ -1644,6 +1646,32 @@
               <div class="ui-group">
                 <button class="btn btn-primary" style="width: fit-content; margin: 0 auto">
                   <span>Оценить сделку</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal micromodal-slide" id="emergency-withdrawal-modal" aria-hidden="true">
+      <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal-container-2" role="dialog" aria-modal="true">
+          <div class="modal-close" aria-label="Close modal" data-micromodal-close>
+            <svg class="ico ico-mono-close">
+              <use xlink:href="img/sprite-mono.svg#ico-mono-close"></use>
+            </svg>
+          </div>
+          <div class="modal-header">
+            <div class="title-item-2">ВЫ действидельно хотите снять деньги?</div>
+          </div>
+          <div class="modal-content">
+            <form class="modal-form" action="#">
+              <div class="row align-center justify-center">
+                <button class="btn btn-primary" style="width: fit-content">
+                  <span>Да</span>
+                </button>
+                <button class="btn btn-danger" style="width: fit-content">
+                  <span>Отмена</span>
                 </button>
               </div>
             </form>
