@@ -14366,5 +14366,21 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         triggerTarget: s
       });
     }, l = h(g), g;
+  }, window.hideAll = function (e) {
+    var t = void 0 === e ? {} : e,
+        n = t.exclude,
+        i = t.duration;
+    Ln.forEach(function (e) {
+      var t = !1;
+
+      if (n && (t = on(n) ? e.reference === n : e.popper === n.popper), !t) {
+        var r = e.props.duration;
+        e.setProps({
+          duration: i
+        }), e.hide(), e.state.isDestroyed || e.setProps({
+          duration: r
+        });
+      }
+    });
   }, window.debounce = je.a, window.throttle = Re.a;
 }]);
